@@ -8,4 +8,7 @@ class Product < ActiveRecord::Base
     with:    %r{\.(gif|jpg|png)\Z}i,
     message: 'must be a URL for GIF, JPG or PNG image.'
   }
+  validates_length_of :title, :minimum => 10, :too_short => "Must have at least 10 characters!" #did this work??
+  validates :title, length: {minimum: 10, too_short: ": Your title is too short and you are too stupid. Moron." } 
+  # NB - both of the above validations work! (ie they do the same thing slightly diff ways)
 end
