@@ -1,0 +1,18 @@
+This worked:
+curl --proxy 158.119.150.18:8080 http://www.theguardian.com/uk
+
+
+This failed yesterday:
+curl --silent http://localhost:3000/products/2/who_bought.atom
+
+What about: this below worked;
+
+curl --silent --proxy 158.119.150.18:8080 http://www.theguardian.com/uk
+
+
+
+curl --silent --proxy 158.119.150.18:8080 http://localhost:3000/products/2/who_bought.atom
+
+
+
+curl --verbose --proxy 158.119.150.18:8080 http://localhost:3000/products/2/who_bought.atom
