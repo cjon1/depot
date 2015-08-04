@@ -34,4 +34,7 @@ Depot::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  #CJ's new addition to make email work (?????!??!!?)
+  config.action_mailer.delivery_method = :sendmail
 end
