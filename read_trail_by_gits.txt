@@ -1,0 +1,9 @@
+If I've got this correct, I've managed to balls up by creating my first_app repository with:
+
+a) bobbins name (copied Josh's clone email syntax thru niavety but it wasn't appropriate here)
+
+b) I have managed to get it to default to using ssh when doing e.g. 'git push'
+
+~~~~~~~
+
+The depot repository seems far better bcos x) name isn't bobs y) it was easier to create the repository z)'git push' works as is with no grief.  
